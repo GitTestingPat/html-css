@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -62,4 +63,207 @@ footer a {
 
 footer a:hover {
 	color: cornflowerblue;
+=======
+/* SELECTORES UNIVERSALES */
+#titulo {
+    color: tomato;
+}
+
+p.texto {
+    color:slateblue;
+}
+
+p.especial {
+    color: sandybrown;
+}
+
+div p {
+    color:aquamarine;
+}
+
+div h2, div h3 {
+    color:brown;
+}
+
+* {
+    font-size: 24px;
+    /* color:black; */ /* ESTA LINEA SE BORRA PARA PODER ASIGNAR ESTILOS A LOS LINKS */
+}
+
+/* Esto es un comentario*/
+
+/*
+Esto es un cometario
+que tiene
+muuuchas
+lineas
+*/
+/*
+.color{
+    color: #f00;
+}
+.color{
+    color: rgb(0, 255, 255);
+}
+*/
+.color{
+    /* border: 5px red outset; */
+    /*
+        dotted
+        dashed
+        solid
+        double
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+    */
+    border-style:solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+    /*(MEDIDAS RELATIVAS) 1px; 1mm; 1cm; 1in; 1pt; 1pc; 1em; 1rem; */
+}
+#fondo{
+    background-color: red;
+    /* opacity: 0.3; */
+    height: 200px;
+    /* background-image: url(coffee.png); */
+    /* background-size: 200px 200px; */ /* tambien puede recibir los valores de: auto, cover */
+    /* background-repeat: repeat-y; */ /* tambien puede recibir el valor de "repeat-x y no-repeat" */
+    /* background-position: center top; */ /* el primer valor tambien puede ser left y right, el segundo valor tambien puede ser center y bottom */
+    background: red url('coffee.png') repeat-y center bottom / 100px 100px;
+    /* background-size: 100px 100px; */
+}
+
+.margen{
+    background-color: chocolate;
+    /* margin: 15px 20px 25px 30px; */
+    margin: 15px;
+    /* padding: 30px 25px 20px 15px; */
+    /* padding: 30px; */
+    /* padding: 30px 15px; */
+    padding: 30px 15px 5px; /* el primer valor es el margen superior, el segundo del centro y el tercero es del inferior */
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    /*
+    overflow: visible;
+    overflow: hidden; */
+    overflow: scroll;
+    outline: 1px solid red;;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    /* text-align: center; */
+    text-align: justify;
+    /* text-align: left;
+    text-align: right; */
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+a:link{
+    color: blueviolet;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: yellow;
+}
+a:active {
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian;
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display: block; /* los elementos de span son forzados a ordenarse uno debajo del otro */
+    /* display: none; */  /* los elementos de span desaparecen de la vista */
+   /*  visibility: hidden; */ /* los elementos de span tambien desaparecen */
+    /* width: 300px; */
+    max-width: 300px;
+    background-color: red;
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    /* position: static; */ /* esta propiedad viene por defecto en todos los doctos html */
+    /* position: relative; */
+    /* position: fixed; */
+   /*  position: absolute; */
+   position: sticky;
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+.column {
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block {
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+>>>>>>> origin/master
 }
