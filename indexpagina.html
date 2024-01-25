@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Laptop</td>
+                <td>$350.000</td>
+            </tr>
+            <tr>
+                <td>Desktop PC</td>
+                <td>$450.000</td>
+            </tr>
+            <tr>
+                <td>Projector</td>
+                <td>$150.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: $950.000</td>
+        </tfoot>
+    </table>
+    <!-- ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ol es lista ordenada-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input value="nomito"  type="text"  id="nombre" name="nombre" placeholder="Nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz"  type="text"  id="apellido" name="apellido" placeholder="Apellido" />
+        <br>
+        <label for="cometario">Comentario</label>
+        <br>
+        <textarea cols="50"  rows="10"  id="cometario" placeholder="Ingrese cometario" name="cometario">este es un valor por defecto</textarea>
+        <br>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <p>Esta es una página web</p>
+    <P>Con excelente información</P>
+    <hr>
+    <h2>La información es correcta</h2>
+    <p>
+        Este texto es <span style="color:blue">mucho más largo</span>
+        y es para mostrar <br><br>
+        la etiqueta de span!
+    </p>
+    <!-- este texto es un comentario y no
+    aparece en la página -->
+    <a target="_blank" href="https://www.google.cl">Ir a google</a>
+    <br>
+    <img src="img/python-logo.png" height="400" />
+</body>
+</html>
