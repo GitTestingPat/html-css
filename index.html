@@ -1,114 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<<<<<<< HEAD
-    <title>Mi Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Adivina el número secreto</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .container {
+            display: inline-block;
+        }
+        .container__text {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header id="titulo">
-        <h1 id="título">Blog de Patricio</h1>
-    </header>
-    <section class="container">
-        <article class="post">
-            <h2>Título de mi post</h2>
-            <p>Descripción de mi post</p>
-            <img src="img/python-logo.png" width="400" />
-            <p>Texto de prueba para mi blog. Aprende Python. </p>
-        </article>
-        <article class="post">
-            <h2>Título de mi post 2</h2>
-            <p>Descripción de mi post 2</p>
-            <img src="img/Selenium_Logo.png" width="400" />
-            <p>Texto de prueba para mi blog. Aprende Selenium. </p>
-        </article>
-        <article class="post">
-            <h2>Título de mi post 3</h2>
-            <p>Descripción de mi post 3</p>
-            <img src="img/Java-logo.png" width="400" />
-            <p>Texto de prueba para mi blog. Aprende Java. </p>
-        </article>
-    </section>
-    <footer>
-        <section>
-        <a href="#título">Ir al inicio</a>
-        <a href="mailto:patricioandradeh@gmail.com">Contacto</a>
-        </section>
-        <p>Copyright 2024</p>
-    </footer>
-=======
-	<title>Mi pagina</title>
-	<link rel="stylesheet" href="style.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-</head>
-<body>
-	<section class="center">
-		<p>Hola Mundo!</p>
-	</section>
-	<div class="inline-block">inline block</div>
-	<div class="inline-block">inline block 2</div>
-	<div class="container">
-		<article class="column right">1</article>
-		<article class="column right">2</article>
-		<article class="column right">3</article>
-	</div>
-	<div class="container">
-		<!-- <div class="left">izquierda</div>
-		<div class="right">derecha</div> -->
-		<img src="coffee.png" class="left" />
-		<p>esto es un párrafo a la derecha</p>
-	</div>
-	<div class="inline">prueba 1</div>
-	<div class="inline">prueba 2</div>
-	<span>span 1</span>
-	<span>span 2</span>
-	<article id="position">Esto es un prop de posición</article>
-	<table>
-		<tr>
-			<th>Nombre</th>
-			<th>Apellido</th>
-		</tr>
-		<tr>
-			<td>Patricio</td>
-			<td>Gallardo</td>
-		</tr>
-		<tr>
-			<td>Carol</td>
-			<td>Echeverría</td>
-		</tr>
-		<tr>
-			<td>Rafael</td>
-			<td>Estrada</td>
-		</tr>
-	</table>
-	<ul>
-		<li>Uno esto es relleno de prueba esto es relleno de prueba esto es relleno de prueba</li>
-		<li>Dos esto es relleno de prueba esto es relleno de prueba esto es relleno de prueba</li>
-		<li>Tres esto es relleno de prueba esto es relleno de prueba esto es relleno de prueba</li>
-	</ul>
-	<a href="https://www.google.cl">Página de búsqueda</a>
-	<p class="text">Esto es un texto: Esto es un texto Esto es un texto Esto es un texto Esto es un texto Esto es un texto Esto es un texto Esto es un texto Esto es un texto Esto es un texto</p>
-	<div class="margen">
-		Muestra de margen
-	</div>
-	<article id="fondo">
-		Propiedad de background
-	</article>
-	<h1 class="color">propiedad color</h1>
-	<h1 id="titulo">Titulo</h1>
-	<p class="texto">texto párrafo mi pagina</p>
-	<p class="texto especial">texto párrafo mi pagina</p>
-	<p class="especial">texto párrafo mi pagina</p>
-	<div>
-		<p>Hola Mundo Feliz</p>
-		<h2>Esto es un subtitulo</h2>
-		<h3>Esto es un acapite</h3>
-	</div>
->>>>>>> origin/master
+    <div class="container">
+        <h1>Adivina el número secreto</h1>
+        <div class="container__text">
+            <p>Ingresa un número entero entre 1 y 10:</p>
+            <input type="number" id="userInput" min="1" max="10">
+            <button id="guessButton">Adivinar</button>
+        </div>
+        <img src="./img/robot.png" alt="Robot" class="container__image-robot" />
+        <div class="container__informations">
+            <img src="./img/trophy.png" alt="Icon of trophy" />
+        </div>
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
